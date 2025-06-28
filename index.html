@@ -80,15 +80,15 @@
         data-tilda-root-zone="com">
         <div id="rec736174825" class="r t-rec" style=" " data-record-type="415"> <!-- t415 --> <!-- cover -->
             <div class="t-cover" id="recorddiv736174825" bgimgfield="img"
-                style="height:100vh;background-image:url('https://static.tildacdn.info/tild3731-3230-4766-a436-613461333339/-/resize/20x/noroot.png');">
+                style="height:100vh;background-image:url('https://i.pinimg.com/736x/c2/4e/96/c24e9618f1eb9ab333df25092354149f.jpg');">
                 <div class="t-cover__carrier" id="coverCarry736174825" data-content-cover-id="736174825"
-                    data-content-cover-bg="https://static.tildacdn.info/tild3731-3230-4766-a436-613461333339/noroot.png"
+                    data-content-cover-bg="https://i.pinimg.com/736x/c2/4e/96/c24e9618f1eb9ab333df25092354149f.jpg"
                     data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax="dynamic"
                     data-content-use-image-for-mobile-cover=""
                     style="height:100vh;background-attachment:scroll; background-position:center top;" itemscope
                     itemtype="http://schema.org/ImageObject">
                     <meta itemprop="image"
-                        content="https://static.tildacdn.info/tild3731-3230-4766-a436-613461333339/noroot.png">
+                        content="https://i.pinimg.com/736x/c2/4e/96/c24e9618f1eb9ab333df25092354149f.jpg">
                 </div>
                 <div class="t-cover__filter"
                     style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -o-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));background-image: linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99000000', endColorstr='#66000000');">
@@ -108,7 +108,8 @@
                                         </div>
                                         <div class="t415__descr t-descr t-descr_md" field="descr">
                                             <br /><br /><br /><strong style="font-family: Georgia;">Так далеко все зашло
-                                                – мы женимся!</strong></div>
+                                                – мы женимся!</strong>
+                                        </div>
                                     </div>
                                     <div id="t415__timer736174825" class="t415__timer">
                                         <div class="t415__col "> <span
@@ -142,29 +143,78 @@
                     </div>
                 </div>
             </div>
-            <script
-                type="text/javascript">t_onReady(function () {
-                        function getTimeRemaining(endtime) {
-                            var time = Date.parse(endtime) - Date.parse(new Date()); if (time < 0) { var seconds = 0; var minutes = 0; var hours = 0; var days = 0; } else { var seconds = Math.floor((time / 1000) % 60); var minutes = Math.floor((time / 1000 / 60) % 60); var hours = Math.floor((time / (1000 * 60 * 60)) % 24); var days = Math.floor(time / (1000 * 60 * 60 * 24)); }
-                            return { total: time, days: days, hours: hours, minutes: minutes, seconds: seconds, };
+            <script type="text/javascript">t_onReady(function () {
+                    function getTimeRemaining(endtime) {
+                        var time = Date.parse(endtime) - Date.parse(new Date());
+                        if (time < 0) {
+                            var seconds = 0;
+                            var minutes = 0;
+                            var hours = 0;
+                            var days = 0;
+                        } else {
+                            var seconds = Math.floor((time / 1000) % 60);
+                            var minutes = Math.floor((time / 1000 / 60) % 60);
+                            var hours = Math.floor((time / (1000 * 60 * 60)) % 24);
+                            var days = Math.floor(time / (1000 * 60 * 60 * 24));
                         }
-                        function handleOverflowMonth(date) {
-                            var splittedDate = date.split('-'); var year = parseInt(splittedDate[0], 10); var month = parseInt(splittedDate[1], 10); var day = parseInt(splittedDate[2], 10); var countDays = new Date(year, month, 0).getDate(); if (day > countDays) {
-                                var difference = Math.abs(countDays - day); day = difference; month += 1; if (month > 12) { year += 1; month = 1; }
-                                return year + '-' + ('0' + month).slice(-2) + '-' + ('0' + day).slice(-2);
+                        return { total: time, days: days, hours: hours, minutes: minutes, seconds: seconds };
+                    }
+                    function handleOverflowMonth(date) {
+                        var splittedDate = date.split('-');
+                        var year = parseInt(splittedDate[0], 10);
+                        var month = parseInt(splittedDate[1], 10);
+                        var day = parseInt(splittedDate[2], 10);
+                        var countDays = new Date(year, month, 0).getDate();
+                        if (day > countDays) {
+                            var difference = Math.abs(countDays - day);
+                            day = difference;
+                            month += 1;
+                            if (month > 12) {
+                                year += 1;
+                                month = 1;
                             }
-                            return date;
+                            return year + '-' + ('0' + month).slice(-2) + '-' + ('0' + day).slice(-2);
                         }
-                        function initializeClock(id, endtime) {
-                            var clock = document.getElementById(id); if (!clock) return; var daysSpan = clock.querySelector('.t415__days'); var hoursSpan = clock.querySelector('.t415__hours'); var minutesSpan = clock.querySelector('.t415__minutes'); var secondsSpan = clock.querySelector('.t415__seconds'); function updateClock() {
-                                var time = getTimeRemaining(endtime); if (time.days >= 100) { daysSpan.innerHTML = time.days; } else { daysSpan.innerHTML = ('0' + time.days).slice(-2); }
-                                hoursSpan.innerHTML = ('0' + time.hours).slice(-2); minutesSpan.innerHTML = ('0' + time.minutes).slice(-2); secondsSpan.innerHTML = ('0' + time.seconds).slice(-2); if (time.total <= 0) { clearInterval(timeInterval); }
+                        return date;
+                    }
+                    function initializeClock(id, endtime) {
+                        var clock = document.getElementById(id);
+                        if (!clock) return;
+                        var daysSpan = clock.querySelector('.t415__days');
+                        var hoursSpan = clock.querySelector('.t415__hours');
+                        var minutesSpan = clock.querySelector('.t415__minutes');
+                        var secondsSpan = clock.querySelector('.t415__seconds');
+                        function updateClock() {
+                            var time = getTimeRemaining(endtime);
+                            if (time.days >= 100) {
+                                daysSpan.innerHTML = time.days;
+                            } else {
+                                daysSpan.innerHTML = ('0' + time.days).slice(-2);
                             }
-                            updateClock(); var timeInterval = setInterval(updateClock, 1000);
+                            hoursSpan.innerHTML = ('0' + time.hours).slice(-2);
+                            minutesSpan.innerHTML = ('0' + time.minutes).slice(-2);
+                            secondsSpan.innerHTML = ('0' + time.seconds).slice(-2);
+                            if (time.total <= 0) {
+                                clearInterval(timeInterval);
+                                daysSpan.innerHTML = '00';
+                                hoursSpan.innerHTML = '00';
+                                minutesSpan.innerHTML = '00';
+                                secondsSpan.innerHTML = '00';
+                            }
                         }
-                        var deadlineDate = "2024-08-24".trim(); var deadlineTime = "11:00".trim(); var deadlineUtc = "+03:00".trim(); if (deadlineUtc.charAt(0) !== '-' && deadlineUtc.charAt(0) !== '+') { deadlineUtc = '+' + deadlineUtc; }
-                        deadlineDate = handleOverflowMonth(deadlineDate); var deadline = new Date(deadlineDate + 'T' + ('0' + deadlineTime).slice(-5) + deadlineUtc); initializeClock('t415__timer736174825', deadline);
-                    });</script>
+                        updateClock();
+                        var timeInterval = setInterval(updateClock, 1000);
+                    }
+                    var deadlineDate = "2025-09-12".trim();
+                    var deadlineTime = "00:00".trim();
+                    var deadlineUtc = "+04:00".trim();
+                    if (deadlineUtc.charAt(0) !== '-' && deadlineUtc.charAt(0) !== '+') {
+                        deadlineUtc = '+' + deadlineUtc;
+                    }
+                    deadlineDate = handleOverflowMonth(deadlineDate);
+                    var deadline = new Date(deadlineDate + 'T' + ('0' + deadlineTime).slice(-5) + deadlineUtc);
+                    initializeClock('t415__timer736174825', deadline);
+                });</script>
             <style>
                 #rec736174825 .t415__descr-second,
                 #rec736174825 .t415__hint {
@@ -638,8 +688,8 @@
                                                     августа.</span></div>
                                         </div>
                                         <div class="t182__buttons">
-                                            <div class="t-btnwrapper t182__btnwrapper"> <a href="" target=""
-                                                    class="t182__btn t-btn t-btn_md "
+                                            <div class="t-btnwrapper t182__btnwrapper"> <a href="#popup:myform-1"
+                                                    target="" class="t182__btn t-btn t-btn_md "
                                                     style="color:#ffffff;background-color:#a99f97;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;font-family:Georgia;text-transform:uppercase;"
                                                     data-buttonfieldset="button">
                                                     <table role="presentation" style="width:100%; height:100%;">
@@ -648,8 +698,8 @@
                                                         </tr>
                                                     </table>
                                                 </a> </div>
-                                            <div class="t-btnwrapper t182__btnwrapper"> <a href="" target=""
-                                                    class="t182__btn t-btn t-btn_md "
+                                            <div class="t-btnwrapper t182__btnwrapper"> <a href="#popup:myform-2"
+                                                    target="" class="t182__btn t-btn t-btn_md "
                                                     style="color:#a99f97;background-color:#f5f2f0;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;font-family:Georgia;text-transform:uppercase;"
                                                     data-buttonfieldset="button2">
                                                     <table role="presentation" style="width:100%; height:100%;">
@@ -939,7 +989,7 @@
                                         <div class="t-input-block " style="border-radius:5px;">
                                             <div class="t-inputquantity__wrapper"> <button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
-                                                    aria-label="Минус" style="color:#6b8ab0">&ndash;</button> <input
+                                                    aria-label="Минус" style="color:#6b8ab0">–</button> <input
                                                     type="number" inputmode="numeric"
                                                     name="Сколько взрослых будет с Вами " id="input_1689288479610"
                                                     class="t-input t-inputquantity js-tilda-rule" value=""
@@ -947,7 +997,8 @@
                                                     style="color:#000000;border:1px solid #6b8ab0;background-color:#f2f2f2;border-radius:5px;">
                                                 <button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-plus"
-                                                    aria-label="Плюс" style="color:#6b8ab0">+</button> </div>
+                                                    aria-label="Плюс" style="color:#6b8ab0">+</button>
+                                            </div>
                                             <script>t_onReady(function () { t_onFuncLoad('t_loadJsFile', function () { t_loadJsFile('https://static.tildacdn.info/js/tilda-quantity-1.0.min.js', function () { t_onFuncLoad('t_input_quantity_init', function () { t_input_quantity_init('736174835', '1689288479610'); }) }) }); });</script>
                                         </div>
                                         <div class="t-input-error" aria-live="polite" id="error_1689288479610"></div>
@@ -961,7 +1012,7 @@
                                         <div class="t-input-block " style="border-radius:5px;">
                                             <div class="t-inputquantity__wrapper"> <button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
-                                                    aria-label="Минус" style="color:#6b8ab0">&ndash;</button> <input
+                                                    aria-label="Минус" style="color:#6b8ab0">–</button> <input
                                                     type="number" inputmode="numeric" name="Сколько детей будет с Вами "
                                                     id="input_1689288531241"
                                                     class="t-input t-inputquantity js-tilda-rule" value=""
@@ -969,7 +1020,8 @@
                                                     style="color:#000000;border:1px solid #6b8ab0;background-color:#f2f2f2;border-radius:5px;">
                                                 <button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-plus"
-                                                    aria-label="Плюс" style="color:#6b8ab0">+</button> </div>
+                                                    aria-label="Плюс" style="color:#6b8ab0">+</button>
+                                            </div>
                                             <script>t_onReady(function () { t_onFuncLoad('t_loadJsFile', function () { t_loadJsFile('https://static.tildacdn.info/js/tilda-quantity-1.0.min.js', function () { t_onFuncLoad('t_input_quantity_init', function () { t_input_quantity_init('736174835', '1689288531241'); }) }) }); });</script>
                                         </div>
                                         <div class="t-input-error" aria-live="polite" id="error_1689288531241"></div>
