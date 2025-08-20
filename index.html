@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock-->
     <title>Приглашение на свадьбу </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <meta name="description" content="Приглашение на свадьбу " />
     <meta property="og:url" content="http://weddingdaily.tilda.ws/test" />
     <meta property="og:title" content="Приглашение на свадьбу " />
@@ -344,7 +345,9 @@
                                 <div style="font-size: 20px;" data-customstyle="yes"><span
                                         style="font-family: Georgia; color: rgb(170, 163, 158);">11:50</span><br /><span
                                         style="font-family: Georgia; color: rgb(170, 163, 158);">Торжественная
-                                        регистрация</span></div>
+                                        регистрация</span><br /><span
+                                        style="font-family: Georgia; color: rgb(170, 163, 158);">(сбор гостей за 20-30
+                                        минут)</span></div>
                             </div>
                         </div>
                     </div>
@@ -464,7 +467,9 @@
                                     определились с нарядом,
                                     то можете присмотреться к представленным ниже цветам.</span><br />
                                 <span style="color: rgb(169, 159, 151); font-family: Georgia;">Они отлично дополнят
-                                    концепцию нашей свадьбы.</span>
+                                    концепцию нашей свадьбы.</span><br />
+                                <span style="color: rgb(169, 159, 151); font-family: Georgia;">Приветствуются жемчужные
+                                    аксессуары.</span>
                             </div>
                         </div>
                     </div>
@@ -549,6 +554,13 @@
                             margin-bottom: 45px;
                         }
                     }
+
+                    #qrcode {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0 auto;
+                        display: block;
+                    }
                 </style>
                 <ul role="list" class="t1007__container t-container t-card__container">
                     <li class="t1007__col t-card__col t-col t-col_3 t-item t-animate " data-animate-style="fadeinright"
@@ -566,6 +578,7 @@
                     <li class="t1007__col t-card__col t-col t-col_3 t-item t-animate " data-animate-style="fadeinright"
                         data-animate-chain="yes">
                         <div class="t-divider t1007__line" data-divider-fieldset="bordercolor,bordersize"></div>
+                        <div id="qrcode"></div>
                         <div class=" t1007__col-wrapper"> <img class="t1007__img t-img ">
                             <div class="t1007__descr t-descr t-descr_sm" field="li_descr__1476970720067">Вместо вручения
                                 цветов
@@ -595,7 +608,7 @@
                                 imgfield="li_img__1476970723554" style="width:70px;" alt="">
                             <div class="t1007__title t-name t-name_xl" field="li_title__1476970723554">Паркинг</div>
                             <div class="t1007__descr t-descr t-descr_sm" field="li_descr__1476970723554">На территории,
-                                где будет проходить венчание и банкет, места для парковки имеются.</div>
+                                где будет проходить банкет, места для парковки имеются.</div>
                         </div>
                     </li>
                 </ul>
@@ -685,6 +698,15 @@ c-0.589,0.583-1.538,0.58-2.121-0.008l-6.994-7.049L25.5,36.033z" />
         <script
             type="text/javascript">if (!window.mainTracker) { window.mainTracker = 'tilda'; }
                 window.tildastatcookie = 'no'; setTimeout(function () { (function (d, w, k, o, g) { var n = d.getElementsByTagName(o)[0], s = d.createElement(o), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src = g; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, '2b801d0d4ed1174d2948f035a66eb5df', 'script', 'https://static.tildacdn.info/js/tilda-stat-1.0.min.js'); }, 2000);</script>
+        <script>
+            const link = "https://belyisad.ru/ivandina";
+
+            new QRCode(document.getElementById("qrcode"), {
+                text: link,
+                width: 200,
+                height: 200,
+            });
+        </script>
 </body>
 
 </html>
